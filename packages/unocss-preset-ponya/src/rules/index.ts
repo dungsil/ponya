@@ -88,7 +88,7 @@ export const rules: Rule<Theme>[] = [
       }
     }
   ],
-  // `margin`, `padding`를 정의한다.
+  // `border-width`를 정의한다.
   [
     /^b([trblxy])?(\d+)?$/,
     ([, position, value]) => {
