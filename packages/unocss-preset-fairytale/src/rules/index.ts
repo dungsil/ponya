@@ -18,6 +18,24 @@ function cssUnit(unit: string = ''): string {
 }
 
 export const rules: Rule<{}>[] = [
+  // 키워드 `auto`를 정의한다.
+  // 적용대상: `width`, `height`, `margin`
+  [
+    /^(~)?([whm])(~)?$/,
+    ([, min, key, max]) => {
+      let name = cssKey[key]
+
+      if (max) {
+        name = 'max-' + name
+      } else if (min) {
+        name = 'min-' + name
+      }
+
+      return {
+        [name]: 'auto',
+      }
+    }
+  ],
   // `width`, `height`를 정의한다.
   [
     /^([wh])(~)?(\d+)((?=[^~])[a-z]+)?(~(\d+)?([a-z]+)?)?$/,
