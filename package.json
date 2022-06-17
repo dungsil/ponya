@@ -11,7 +11,9 @@
   "scripts": {
     "dev:unocss": "yarn workspace unocss-preset-fairytale dev",
     "build:unocss": "yarn workspace unocss-preset-fairytale build",
-    "build": "run-p -s build:*"
+    "build": "run-p -s build:*",
+
+    "publish:next": "lerna publish --bump from-package --canary --preid build --dist-tag next"
   },
   "devDependencies": {
     "@lerna-lite/cli": "^1.5.1",

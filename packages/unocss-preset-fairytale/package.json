@@ -1,8 +1,18 @@
 {
   "name": "unocss-preset-fairytale",
   "version": "0.0.0",
+  "files": ["dist", "types"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "dev": "vite dev"
+    "dev": "vite dev",
+    "build:type": "tsc",
+    "build:lib": "vite build",
+    "build": "run-p -s build:*"
   },
   "devDependencies": {
     "unocss": "0.39.0",

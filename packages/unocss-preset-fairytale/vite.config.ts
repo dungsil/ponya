@@ -7,7 +7,7 @@ import { presetFairytale } from './src'
 
 export default defineConfig({
   plugins: [unocss({
-    presets: [presetFairytale()]
+    presets: [presetFairytale()],
   })],
   build: {
     lib: {
