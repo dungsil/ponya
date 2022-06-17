@@ -5,6 +5,7 @@
   "author": "Kim Younggeon <mail@kyg.kr>",
   "description": "Ponya design system unocss preset",
   "license": "MIT",
+  "types": "types",
   "files": ["dist", "types"],
   "exports": {
     ".": {
