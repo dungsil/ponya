@@ -56,14 +56,25 @@ export const rules: Rule<FairytaleTheme>[] = [
       }
     }
   ],
-  // `margin`, `padding`, `border`를 정의한다.
+  // `margin`, `padding`를 정의한다.
   [
-    /^([mpb])([trblxy])?(\d+)?$/,
-    ([, mbp, position, value]) => {
+    /^([mp])([trblxy])?(\d+)?$/,
+    ([, mp, position, value]) => {
       const suffix = cssPositions[position] ? `-${cssPositions[position]}` : ''
 
       return {
-        [`${cssKey[mbp]}${suffix}`]: value ? value + cssUnit() : '1px',
+        [`${cssKey[mp]}${suffix}`]: value ? value + cssUnit() : '1px',
+      }
+    }
+  ],
+  // `margin`, `padding`를 정의한다.
+  [
+    /^b([trblxy])?(\d+)?$/,
+    ([, position, value]) => {
+      const suffix = cssPositions[position] ? `-${cssPositions[position]}` : ''
+
+      return {
+        [`border${suffix}-width`]: value ? value + cssUnit() : '1px',
       }
     }
   ],
