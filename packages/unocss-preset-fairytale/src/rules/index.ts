@@ -1,4 +1,5 @@
-import { type Rule, type DynamicMatcher} from '@unocss/core'
+import type { Rule } from '@unocss/core'
+import type { FairytaleTheme } from '../themes'
 
 const cssKey: Record<string, string> = {
   w: 'width',
@@ -27,7 +28,7 @@ function cssUnit(unit: string = ''): string {
   }
 }
 
-export const rules: Rule<{}>[] = [
+export const rules: Rule<FairytaleTheme>[] = [
   // `width`, `height`를 정의한다.
   [
     /^([wh])(~)?(\d+)((?=[^~])[a-z]+)?(~(\d+)?([a-z]+)?)?$/,
