@@ -1,8 +1,8 @@
 import type { Preflight } from '@unocss/core'
-import type { FairytaleTheme } from '../themes'
+import type { Theme } from '../theme'
 
 // noinspection CssUnknownProperty
-export const preflights: Preflight<FairytaleTheme>[] = [
+export const preflights: Preflight<Theme>[] = [
   {
     layer: 'preflights',
     // language=CSS

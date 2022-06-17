@@ -1,16 +1,17 @@
 import { type Preset } from 'unocss'
 
-import { type FairytaleTheme } from './themes'
+import { theme, type Theme } from './theme'
 import { preflights } from './preflights'
 import { rules } from './rules'
 
 /**
  * Fairytale preset
  */
-export function presetFairytale(): Preset<FairytaleTheme> {
+export function presetFairytale(): Preset<Theme> {
 
   return {
     name: 'unocss-preset-fairytale',
+    theme,
     preflights,
     rules,
   }

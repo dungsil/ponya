@@ -1,12 +1,14 @@
 import type { Rule } from '@unocss/core'
-import type { FairytaleTheme } from '../themes'
+import type { PaletteName, Theme } from '../theme'
 
 const cssKey: Record<string, string> = {
   w: 'width',
   h: 'height',
   m: 'margin',
   p: 'padding',
-  b: 'border'
+  b: 'border',
+  bg: 'background-color',
+  c: 'color',
 }
 
 const cssPositions: Record<string, string> = {
@@ -28,7 +30,26 @@ function cssUnit(unit: string = ''): string {
   }
 }
 
-export const rules: Rule<FairytaleTheme>[] = [
+function colorResolver(theme: Theme, name: PaletteName | string) {
+  let color = name
+
+  if (name as PaletteName) {
+    const paletteAndColor = name.split('-')
+    const colorKey = (paletteAndColor[1] ?? '500') as unknown as number
+
+    color = theme.palette?.[paletteAndColor[0]][colorKey]
+  }
+
+  return color
+}
+
+export const rules: Rule<Theme>[] = [
+  // `background-color` 및 `text-color`를 정의한다.
+  [
+    /^(bg|c)-(.+)$/,
+    ([, type, value], { theme }) => ({ [cssKey[type]]: colorResolver(theme, value) })
+  ],
+
   // `width`, `height`를 정의한다.
   [
     /^([wh])(~)?(\d+)((?=[^~])[a-z]+)?(~(\d+)?([a-z]+)?)?$/,
@@ -96,4 +117,10 @@ export const rules: Rule<FairytaleTheme>[] = [
       }
     }
   ],
+
+  // display 정의
+  [
+    /(none|flex|grid|block|table-row|table|list-item|inline-block|inline-flex|inline-grid|inline)/,
+    ([, display]) => ({ display })
+  ]
 ]
