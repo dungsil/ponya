@@ -17,9 +17,9 @@
     "publish:latest": "lerna publish --conventional-commits --changelog-header-message \"Ponya\" --dist-tag latest --create-release github"
   },
   "devDependencies": {
-    "@lerna-lite/cli": "^1.5.1",
+    "@lerna-lite/cli": "1.5.1",
     "@types/node": "18.0.0",
-    "npm-run-all": "true4.1.5",
+    "npm-run-all": "4.1.5",
     "typescript": "4.7.3"
   }
 }

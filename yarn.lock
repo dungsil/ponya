@@ -63,7 +63,7 @@
     kolorist "^1.5.1"
     local-pkg "^0.4.1"
 
-"@lerna-lite/cli@true1.5.1":
+"@lerna-lite/cli@1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@lerna-lite/cli/-/cli-1.5.1.tgz#db44341706d9b091584a5afe5315908339ddaaeb"
   integrity sha512-QqSYgqBrpqZ9tiNP/toQjtMDUGUVzgQQBzZ4g75YDaoVVBk0IsGyrr5shsMbjGqoWSg9Vyf4YywtuqW7V2lSDA==
@@ -2840,7 +2840,7 @@ npm-registry-fetch@^13.0.0, npm-registry-fetch@^13.0.1, npm-registry-fetch@^13.1
     npm-package-arg "^9.0.1"
     proc-log "^2.0.0"
 
-npm-run-all@true4.1.5:
+npm-run-all@4.1.5:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-4.1.5.tgz#04476202a15ee0e2e214080861bff12a51d98fba"
   integrity sha512-Oo82gJDAVcaMdi3nuoKFavkIHBRVqQ1qvMb+9LHk/cF4P6B2m8aP04hGf7oL6wZ9BuGwX1onlLhpuoofSyoQDQ==
