@@ -13,7 +13,7 @@
     "build:unocss": "yarn workspace unocss-preset-fairytale build",
     "build": "run-p -s build:*",
 
-    "publish:next": "lerna publish --bump from-package --canary --preid build --dist-tag next"
+    "publish": "lerna publish --changelog-header-message \"Fairytale\" --canary --preid build --dist-tag next --create-release github"
   },
   "devDependencies": {
     "@lerna-lite/cli": "^1.5.1",
