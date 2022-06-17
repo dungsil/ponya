@@ -45,10 +45,10 @@ export const rules: Rule<FairytaleTheme>[] = [
       let minOrMax = ''
 
       if (min) {
-        return 'min-'
+        minOrMax = 'min-'
       }
       if (max) {
-        return 'max-'
+        minOrMax = 'max-'
       }
 
       return {
