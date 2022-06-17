@@ -1,7 +1,7 @@
 {
-  "name": "fairytale",
+  "name": "ponya",
   "version": "0.0.0",
-  "repository": "git@github.com:dungsil/fairytale.git",
+  "repository": "git@github.com:dungsil/ponya.git",
   "author": "Kim Younggeon <mail@kyg.kr>",
   "license": "MIT",
   "private": true,
@@ -9,11 +9,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:unocss": "yarn workspace unocss-preset-fairytale dev",
-    "build:unocss": "yarn workspace unocss-preset-fairytale build",
+    "dev:unocss": "yarn workspace unocss-preset-ponya dev",
+    "build:unocss": "yarn workspace unocss-preset-ponya build",
     "build": "run-p -s build:*",
 
-    "publish": "lerna publish --changelog-header-message \"Fairytale\" --canary --preid build --dist-tag next --create-release github"
+    "publish": "lerna publish --changelog-header-message \"Ponya\" --canary --preid build --dist-tag next --create-release github"
   },
   "devDependencies": {
     "@lerna-lite/cli": "^1.5.1",

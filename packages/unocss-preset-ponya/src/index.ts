@@ -5,12 +5,12 @@ import { preflights } from './preflights'
 import { rules } from './rules'
 
 /**
- * Fairytale preset
+ * Ponya preset
  */
-export function presetFairytale(): Preset<Theme> {
+export function presetPonya(): Preset<Theme> {
 
   return {
-    name: 'unocss-preset-fairytale',
+    name: 'unocss-preset-ponya',
     theme,
     preflights,
     rules,

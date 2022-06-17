@@ -3,11 +3,11 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import unocss from 'unocss/vite'
 
-import { presetFairytale } from './src'
+import { presetPonya } from './src'
 
 export default defineConfig({
   plugins: [unocss({
-    presets: [presetFairytale()],
+    presets: [presetPonya()],
   })],
   build: {
     lib: {
