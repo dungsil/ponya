@@ -1,12 +1,15 @@
 {
   "name": "unocss-preset-ponya",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "git@github.com:dungsil/ponya.git",
   "author": "Kim Younggeon <mail@kyg.kr>",
   "description": "Ponya design system unocss preset",
   "license": "MIT",
   "types": "types",
-  "files": ["dist", "types"],
+  "files": [
+    "dist",
+    "types"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
