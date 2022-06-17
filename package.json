@@ -9,10 +9,14 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:unocss": "yarn workspace unocss-preset-fairytale dev"
+    "dev:unocss": "yarn workspace unocss-preset-fairytale dev",
+    "build:unocss": "yarn workspace unocss-preset-fairytale build",
+    "build": "run-p -s build:*"
   },
   "devDependencies": {
+    "@lerna-lite/cli": "^1.5.1",
     "@types/node": "18.0.0",
+    "npm-run-all": "true4.1.5",
     "typescript": "4.7.3"
   }
 }
