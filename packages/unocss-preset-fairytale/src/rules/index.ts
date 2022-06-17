@@ -3,6 +3,16 @@ import { type Rule, type DynamicMatcher} from '@unocss/core'
 const cssKey: Record<string, string> = {
   w: 'width',
   h: 'height',
+  m: 'margin',
+  p: 'padding',
+  b: 'border'
+}
+
+const cssPositions: Record<string, string> = {
+  t: 'top',
+  r: 'right',
+  b: 'bottom',
+  l: 'left',
 }
 
 function cssUnit(unit: string = ''): string {
@@ -18,24 +28,6 @@ function cssUnit(unit: string = ''): string {
 }
 
 export const rules: Rule<{}>[] = [
-  // 키워드 `auto`를 정의한다.
-  // 적용대상: `width`, `height`, `margin`
-  [
-    /^(~)?([whm])(~)?$/,
-    ([, min, key, max]) => {
-      let name = cssKey[key]
-
-      if (max) {
-        name = 'max-' + name
-      } else if (min) {
-        name = 'min-' + name
-      }
-
-      return {
-        [name]: 'auto',
-      }
-    }
-  ],
   // `width`, `height`를 정의한다.
   [
     /^([wh])(~)?(\d+)((?=[^~])[a-z]+)?(~(\d+)?([a-z]+)?)?$/,
@@ -60,6 +52,35 @@ export const rules: Rule<{}>[] = [
 
       return {
         [`${minOrMax}${cssKey[wh]}`]: `${value}${cssUnit(unit)}`,
+      }
+    }
+  ],
+  // `margin`, `padding`, `border`를 정의한다.
+  [
+    /^([mpb])([trblxy])?(\d+)?$/,
+    ([, mbp, position, value]) => {
+      const suffix = cssPositions[position] ? `-${cssPositions[position]}` : ''
+
+      return {
+        [`${cssKey[mbp]}${suffix}`]: value ? value + cssUnit() : '1px',
+      }
+    }
+  ],
+  // 키워드 `auto`를 정의한다.
+  // 적용대상: `width`, `height`, `margin`
+  [
+    /^(~)?([whm])(~)?$/,
+    ([, min, key, max]) => {
+      let name = cssKey[key]
+
+      if (max) {
+        name = 'max-' + name
+      } else if (min) {
+        name = 'min-' + name
+      }
+
+      return {
+        [name]: 'auto',
       }
     }
   ],
