@@ -23,7 +23,7 @@
     "build": "run-p -s build:*"
   },
   "devDependencies": {
-    "unocss": "0.39.0",
+    "unocss": "0.39.3",
     "vite": "2.9.12"
   },
   "peerDependencies": {
