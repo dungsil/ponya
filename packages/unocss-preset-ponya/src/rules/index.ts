@@ -112,7 +112,7 @@ export const rules: Rule<Theme>[] = [
     /^font-(.+)$/,
     ([, weightOrSize], { theme }) => {
       let key = 'font-weight'
-      let value = theme.font.weight[weightOrSize]
+      let value = theme.font.weight[weightOrSize].toString()
 
       if (!value) {
         key = 'font-size'
