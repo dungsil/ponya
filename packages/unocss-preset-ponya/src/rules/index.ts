@@ -10,6 +10,7 @@ const cssKey: Record<string, string> = {
   b: 'border',
   bg: 'background-color',
   c: 'color',
+  text: 'color'
 }
 
 const cssPositions: Record<string, string> = {
@@ -31,11 +32,10 @@ function cssUnit(unit: string = ''): string {
   }
 }
 
-
 export const rules: Rule<Theme>[] = [
   // `background-color` 및 `text-color`를 정의한다.
   [
-    /^(bg|c)-(.+)$/,
+    /^(bg|c|text)-(.+)$/,
     ([, type, value], { theme }) => ({ [cssKey[type]]: colorResolver(theme, value) })
   ],
 
