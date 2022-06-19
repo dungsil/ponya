@@ -112,7 +112,7 @@ export const rules: Rule<Theme>[] = [
     /^font-(.+)$/,
     ([, weightOrSize], { theme }) => {
       let key = 'font-weight'
-      let value = theme.font.weight[weightOrSize].toString()
+      let value = theme.font.weight[weightOrSize]?.toString()
 
       if (!value) {
         key = 'font-size'
@@ -129,6 +129,18 @@ export const rules: Rule<Theme>[] = [
   [
     /^font-(sans|serif|mono)$/,
     ([, family], { theme }) => ({ 'font-family': theme.font.family[family as 'sans' | 'serif' | 'mono'] })
+  ],
+
+  // `line-height` 정의
+  [
+    /^line-height-(.+)$/,
+    ([, value], { theme }) => ({ 'line-height': theme.lineHeight[value] ?? value })
+  ],
+
+  // `letter-spacing` 정의
+  [
+    /^letter-spacing-(.+)$/,
+    ([, value], { theme }) => ({ 'letter-spacing': theme.letterSpacing[value] ?? value })
   ],
 
   // display 정의

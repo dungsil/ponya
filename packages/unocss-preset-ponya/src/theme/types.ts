@@ -40,7 +40,9 @@ export interface Theme {
       size: keyof Theme['font']['size'],
       weight: keyof Theme['font']['weight'],
       color: PaletteName | string,
-    }
+    },
+    lineHeight: keyof Theme['lineHeight'],
+    letterSpacing: keyof Theme['letterSpacing'],
   },
 
   palette: Palette,
@@ -52,5 +54,7 @@ export interface Theme {
     },
     size: Record<string, string>
     weight: Record<string, number>
-  }
+  },
+  lineHeight: Record<string, number>,
+  letterSpacing: Record<string, string>
 }

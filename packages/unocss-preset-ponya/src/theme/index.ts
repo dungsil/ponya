@@ -8,7 +8,9 @@ export const theme: Theme = {
       size: 'md',
       weight: 'regular',
       color: 'gray-800'
-    }
+    },
+    lineHeight: 'normal',
+    letterSpacing: 'normal'
   },
   palette: {
     transparent: 'transparent',
@@ -196,5 +198,13 @@ export const theme: Theme = {
       'semi-black': 800,
       black: 900,
     }
+  },
+  lineHeight: {
+    none: 1,
+    normal: 1.5
+  },
+  letterSpacing: {
+    none: '0',
+    normal: '0.0625em'
   }
 }
