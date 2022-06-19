@@ -20,7 +20,8 @@
     "dev": "vite dev",
     "build:type": "tsc",
     "build:lib": "vite build",
-    "build": "run-p -s build:*"
+    "build": "run-p -s build:*",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "unocss": "0.39.3",
