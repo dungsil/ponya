@@ -1,5 +1,6 @@
+import { colorResolver } from '../utils'
 import type { Rule } from '@unocss/core'
-import type { PaletteName, Theme } from '../theme'
+import type { Theme } from '../theme'
 
 const cssKey: Record<string, string> = {
   w: 'width',
@@ -30,18 +31,6 @@ function cssUnit(unit: string = ''): string {
   }
 }
 
-function colorResolver(theme: Theme, name: PaletteName | string) {
-  let color = name
-
-  if (name as PaletteName) {
-    const paletteAndColor = name.split('-')
-    const colorKey = (paletteAndColor[1] ?? '500') as unknown as number
-
-    color = theme.palette?.[paletteAndColor[0]][colorKey]
-  }
-
-  return color
-}
 
 export const rules: Rule<Theme>[] = [
   // `background-color` 및 `text-color`를 정의한다.
