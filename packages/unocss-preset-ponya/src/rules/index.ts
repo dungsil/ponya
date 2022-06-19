@@ -118,6 +118,30 @@ export const rules: Rule<Theme>[] = [
     }
   ],
 
+  // `font-weight` 정의
+  [
+    /^font-(.+)$/,
+    ([, weightOrSize], { theme }) => {
+      let key = 'font-weight'
+      let value = theme.font.weight[weightOrSize]
+
+      if (!value) {
+        key = 'font-size'
+        value = theme.font.size[weightOrSize]
+      }
+
+      return {
+        [key]: value
+      }
+    }
+  ],
+
+  // `font-family` 정의
+  [
+    /^font-(sans|serif|mono)$/,
+    ([, family], { theme }) => ({ 'font-family': theme.font.family[family as 'sans' | 'serif' | 'mono'] })
+  ],
+
   // display 정의
   [
     /(none|flex|grid|block|table-row|table|list-item|inline-block|inline-flex|inline-grid|inline)/,

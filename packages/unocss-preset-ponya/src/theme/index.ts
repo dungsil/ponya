@@ -163,4 +163,30 @@ export const theme: Theme = {
       900: "#d9480f",
     },
   },
+  font: {
+    family: {
+      sans: "Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+      serif: "ui-serif, serif",
+      mono: "ui-monospace, monospace"
+    },
+    size: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      md: '1rem',
+      lg: '1.2rem',
+      xl: '1.5rem',
+      '2xl': '2rem',
+    },
+    weight: {
+      thin: 100,
+      'extra-light': 200,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      'semi-bold': 600,
+      bold: 700,
+      'semi-black': 800,
+      black: 900,
+    }
+  }
 }
