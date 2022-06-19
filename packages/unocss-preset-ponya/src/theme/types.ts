@@ -34,7 +34,16 @@ export interface Palette extends Record<string, string | PaletteColor> {
 }
 
 export interface Theme {
-  palette: Palette
+  base: {
+    font: {
+      family: keyof Theme['font']['family'],
+      size: keyof Theme['font']['size'],
+      weight: keyof Theme['font']['weight'],
+      color: PaletteName | string,
+    }
+  },
+
+  palette: Palette,
   font: {
     family: {
       sans: string

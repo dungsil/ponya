@@ -2,6 +2,14 @@ import type { Theme } from './types'
 export * from './types'
 
 export const theme: Theme = {
+  base: {
+    font: {
+      family: 'sans',
+      size: 'md',
+      weight: 'regular',
+      color: 'gray-800'
+    }
+  },
   palette: {
     transparent: 'transparent',
     white: '#ffffff',

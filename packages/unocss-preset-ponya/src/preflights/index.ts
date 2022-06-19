@@ -1,18 +1,20 @@
 import type { Preflight } from '@unocss/core'
 import type { Theme } from '../theme'
+import { colorResolver } from '../utils'
 
 // noinspection CssUnknownProperty
 export const preflights: Preflight<Theme>[] = [
   {
     layer: 'preflights',
     // language=CSS
-    getCSS: () =>  `
+    getCSS: ({ theme }) =>  `
       body {
-          font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-          font-weight: 400;
-          font-size: 1rem;
+          font-family: ${theme.font.family[theme.base.font.family]};
+          font-weight: ${theme.font.weight[theme.base.font.weight]};
+          font-size: ${theme.font.size[theme.base.font.size]};
           line-height: 1.5;
           letter-spacing: 0.0625rem;
+          color: ${colorResolver(theme, theme.base.font.color)};
       }
     `
   }
