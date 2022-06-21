@@ -17,7 +17,9 @@
     }
   },
   "scripts": {
-    "dev": "vite dev",
+    "dev": "yarn test",
+    "test": "vitest",
+
     "build:type": "tsc",
     "build:lib": "vite build",
     "build": "run-p -s build:*",
@@ -25,7 +27,8 @@
   },
   "devDependencies": {
     "unocss": "0.39.3",
-    "vite": "2.9.12"
+    "vite": "2.9.12",
+    "vitest": "0.15.1"
   },
   "peerDependencies": {
     "unocss": "^0.39.0"
