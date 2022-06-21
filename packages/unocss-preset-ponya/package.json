@@ -28,6 +28,6 @@
     "vite": "2.9.12"
   },
   "peerDependencies": {
-    "@unocss/core": "^0.39.0"
+    "unocss": "^0.39.0"
   }
 }
