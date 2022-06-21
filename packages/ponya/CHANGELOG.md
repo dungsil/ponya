@@ -5,8 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.1.1](https://github.com/dungsil/ponya/compare/v0.1.0...v0.1.1) (2022-06-21)
 
-**Note:** Version bump only for package unocss-preset-ponya
-
-## 0.0.1 (2022-06-17)
-
-**Note:** Version bump only for package unocss-preset-ponya
+**Note:** Version bump only for package ponya
