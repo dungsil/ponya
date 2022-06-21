@@ -1,6 +1,6 @@
 {
   "name": "unocss-preset-ponya",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "repository": "git@github.com:dungsil/ponya.git",
   "author": "Kim Younggeon <mail@kyg.kr>",
   "description": "Ponya design system unocss preset",
@@ -19,7 +19,6 @@
   "scripts": {
     "dev": "yarn test",
     "test": "vitest",
-
     "build:type": "tsc",
     "build:lib": "vite build",
     "build": "run-p -s build:*",
