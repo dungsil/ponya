@@ -1,0 +1,131 @@
+// Vitest Snapshot v1
+
+exports[`Layouts > height - keyword 1`] = `
+"/* layer: default */
+.h-auto{height:auto;}
+.h-inherit{height:inherit;}
+.h-initial{height:initial;}
+.h-none{height:none;}"
+`;
+
+exports[`Layouts > height - length 1`] = `
+"/* layer: default */
+.h1{height:4px;}
+.h100p{height:100%;}
+.h100vh{height:100vh;}"
+`;
+
+exports[`Layouts > margin 1`] = `
+"/* layer: default */
+.m1{margin:4px;}
+.m10p{margin:10%;}
+.m10px{margin:10px;}
+.mb1vh{margin-bottom:1vh;}
+.ml-auto{margin-left:auto;}
+.mr-none{margin-right:none;}
+.mt2{margin-top:8px;}
+.mx-auto{margin-left:auto;margin-right:auto;}"
+`;
+
+exports[`Layouts > max-height - keyword 1`] = `
+"/* layer: default */
+.h-auto\\\\~{min-height:auto;}
+.h-inherit\\\\~{min-height:inherit;}
+.h-initial\\\\~{min-height:initial;}
+.h-none\\\\~{min-height:none;}"
+`;
+
+exports[`Layouts > max-height - length 1`] = `
+"/* layer: default */
+.h1\\\\~{min-height:4px;}
+.h100p\\\\~{min-height:100%;}
+.h10rem\\\\~{min-height:10rem;}"
+`;
+
+exports[`Layouts > max-width - keyword 1`] = `
+"/* layer: default */
+.w-auto\\\\~{min-width:auto;}
+.w-inherit\\\\~{min-width:inherit;}
+.w-initial\\\\~{min-width:initial;}
+.w-none\\\\~{min-width:none;}"
+`;
+
+exports[`Layouts > max-width - length 1`] = `
+"/* layer: default */
+.w1\\\\~{min-width:4px;}
+.w100p\\\\~{min-width:100%;}
+.w10rem\\\\~{min-width:10rem;}"
+`;
+
+exports[`Layouts > min/max-height 1`] = `
+"/* layer: default */
+.h1\\\\~2{min-height:4px;max-height:8px;}
+.h10\\\\~20p{min-height:40px;max-height:20%;}
+.h10p\\\\~20{min-height:10%;max-height:80px;}
+.h1rem\\\\~100p{min-height:1rem;max-height:100%;}"
+`;
+
+exports[`Layouts > min/max-width 1`] = `
+"/* layer: default */
+.w1\\\\~2{min-width:4px;max-width:8px;}
+.w10\\\\~20p{min-width:40px;max-width:20%;}
+.w10p\\\\~20{min-width:10%;max-width:80px;}
+.w1rem\\\\~100p{min-width:1rem;max-width:100%;}"
+`;
+
+exports[`Layouts > min-height - keyword 1`] = `
+"/* layer: default */
+.h\\\\~auto{max-height:auto;}
+.h\\\\~inherit{max-height:inherit;}
+.h\\\\~initial{max-height:initial;}
+.h\\\\~none{max-height:none;}"
+`;
+
+exports[`Layouts > min-height - length 1`] = `
+"/* layer: default */
+.h\\\\~1{max-height:4px;}
+.h\\\\~100p{max-height:100%;}
+.h\\\\~10rem{max-height:10rem;}"
+`;
+
+exports[`Layouts > min-width - keyword 1`] = `
+"/* layer: default */
+.w\\\\~auto{max-width:auto;}
+.w\\\\~inherit{max-width:inherit;}
+.w\\\\~initial{max-width:initial;}
+.w\\\\~none{max-width:none;}"
+`;
+
+exports[`Layouts > min-width - length 1`] = `
+"/* layer: default */
+.w\\\\~1{max-width:4px;}
+.w\\\\~100p{max-width:100%;}
+.w\\\\~10rem{max-width:10rem;}"
+`;
+
+exports[`Layouts > padding 1`] = `
+"/* layer: default */
+.p1{padding:4px;}
+.p10p{padding:10%;}
+.p10px{padding:10px;}
+.pb1vh{padding-bottom:1vh;}
+.pl-auto{padding-left:auto;}
+.pr-none{padding-right:none;}
+.pt2{padding-top:8px;}
+.py0{padding-top:0;padding-bottom:0;}"
+`;
+
+exports[`Layouts > width - keyword 1`] = `
+"/* layer: default */
+.w-auto{width:auto;}
+.w-inherit{width:inherit;}
+.w-initial{width:initial;}
+.w-none{width:none;}"
+`;
+
+exports[`Layouts > width - length 1`] = `
+"/* layer: default */
+.w1{width:4px;}
+.w100p{width:100%;}
+.w100px{width:100px;}"
+`;
