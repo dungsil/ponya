@@ -15,8 +15,7 @@
     "build:unocss": "yarn workspace unocss-preset-ponya build",
     "build": "run-p -s build:*",
 
-    "publish": "lerna publish --conventional-commits --changelog-header-message \"Ponya\" --canary --preid build --dist-tag next --create-release github",
-    "publish:latest": "lerna publish --conventional-commits --changelog-header-message \"Ponya\" --dist-tag latest --create-release github"
+    "publish": "lerna publish --conventional-commits --changelog-header-message \"Ponya\" --dist-tag latest --create-release github"
   },
   "devDependencies": {
     "@lerna-lite/cli": "1.5.1",
