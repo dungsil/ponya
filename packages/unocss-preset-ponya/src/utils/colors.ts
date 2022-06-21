@@ -7,7 +7,7 @@ export function colorResolver(theme: Theme, name: PaletteName | string) {
     const paletteAndColor = name.split('-')
     const colorKey = (paletteAndColor[1] ?? '500') as unknown as number
 
-    color = theme.palette?.[paletteAndColor[0]][colorKey]
+    color = theme.palette?.[paletteAndColor[0]]?.[colorKey]
   }
 
   return color
