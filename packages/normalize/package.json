@@ -1,6 +1,6 @@
 {
   "name": "@ponya/normalize",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "description": "Ponya design system - Browser normalize CSS",
   "main": "lib/normalize.css",
   "files": [

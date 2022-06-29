@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/dungsil/ponya/compare/v0.2.0...v0.3.0) (2022-06-29)
+
+### Bug Fixes
+
+* **unocss-preset-ponya:** 실행 중 오류 수정 ([3ebc5d2](https://github.com/dungsil/ponya/commit/3ebc5d26e8aea1295bd7a571ab3f28f1644c7eb8))
+
 # [0.2.0](https://github.com/dungsil/ponya/compare/v0.1.2...v0.2.0) (2022-06-21)
 
 ### Features

@@ -8,15 +8,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **normalize:** ponya normalize.css 추가 ([8fbd2d6](https://github.com/dungsil/ponya/commit/8fbd2d6ba74ac4afd7100d8f7238438ed0cc6b68))
-
-# [0.2.0](https://github.com/dungsil/ponya/compare/v0.1.2...v0.2.0) (2022-06-21)
-
-**Note:** Version bump only for package ponya
-
-## [0.1.2](https://github.com/dungsil/ponya/compare/v0.1.1...v0.1.2) (2022-06-21)
-
-**Note:** Version bump only for package ponya
-
-## [0.1.1](https://github.com/dungsil/ponya/compare/v0.1.0...v0.1.1) (2022-06-21)
-
-**Note:** Version bump only for package ponya
