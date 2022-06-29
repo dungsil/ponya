@@ -188,3 +188,13 @@
     clip: rect(0, 0, 0, 0);
     position: absolute;
 }
+
+html[data-color-scheme="auto"] {
+    color-scheme: normal;
+}
+html[data-color-scheme="light"] {
+    color-scheme: light;
+}
+html[data-color-scheme="dark"] {
+    color-scheme: dark;
+}
