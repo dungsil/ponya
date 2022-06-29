@@ -25,11 +25,11 @@
     "prepublish": "yarn build"
   },
   "devDependencies": {
-    "unocss": "0.41.1",
+    "unocss": "0.41.2",
     "vite": "2.9.12",
     "vitest": "0.16.0"
   },
   "peerDependencies": {
-    "unocss": "^0.39.0"
+    "unocss": "^0.41.0"
   }
 }
