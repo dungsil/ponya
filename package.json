@@ -13,6 +13,7 @@
     "dev": "yarn workspace ponya dev",
 
     "build:unocss": "yarn workspace unocss-preset-ponya build",
+    "build:normalize": "yarn workspace @ponya/normalize build",
     "build": "run-p -s build:*",
 
     "publish": "lerna publish --conventional-commits --changelog-header-message \"Ponya\" --dist-tag latest --create-release github"
