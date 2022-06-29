@@ -1,0 +1,190 @@
+/*! Ponya noramlize (forked by sanitize.css v13.0.0) | MIT License | https://github.com/dungsil/ponya */
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: local('Pretendard Variable'), url('https://dun.land/pretendard/v1.3.3//woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:where(:root) {
+    line-height: 0;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+
+    color-scheme: dark light;
+    cursor: default;
+}
+
+:where(body) {
+    margin: 0;
+
+    font-family: 'Pretendard JP', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Hiragino Sans', 'Apple SD Gothic Neo', Meiryo, 'Noto Sans JP', 'Noto Sans KR', 'Malgun Gothic', Osaka, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.0625rem;
+}
+
+:where(:lang(ko), :lang(ko-KR), :lang(ko-KP)) {
+    font-feature-settings: 'ss05';
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+}
+
+:where(hr) {
+    height: 0;
+    color: inherit; /* https://bugzilla.mozilla.org/show_bug.cgi?id=190655 */
+}
+
+:where(nav) :where(ol, ul) {
+    list-style-type: none;
+    padding: 0;
+}
+
+:where(nav li) {
+    display: inline-block;
+}
+
+:where(pre) {
+    font-family: monospace, monospace;
+    font-size: 1em;
+    overflow: auto;
+}
+
+:where(a) {
+    text-decoration: none;
+    color: inherit;
+}
+
+:where(a:hover, a:focus, a:active) {
+    text-decoration: underline;
+    color: inherit;
+}
+
+:where(abbr[title]) {
+    text-decoration: underline dotted;
+}
+
+:where(b, strong) {
+    font-weight: bolder;
+}
+
+:where(code, kbd, samp) {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+:where(small) {
+    font-size: 80%;
+}
+
+:where(audio, canvas, iframe, img, svg, video) {
+    vertical-align: middle;
+}
+
+:where(iframe) {
+    border-style: none;
+}
+
+:where(svg:not([fill])) {
+    fill: currentColor;
+}
+
+:where(table) {
+    border-collapse: collapse;
+    border-color: currentColor;
+    text-indent: 0;
+}
+
+:where(button, input, select) {
+    margin: 0;
+    border: none;
+}
+
+:where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
+    -webkit-appearance: button;
+}
+
+:where(fieldset) {
+    border: 0;
+}
+
+:where(progress) {
+    vertical-align: baseline;
+}
+
+:where([type="search" i]) {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+:where(dialog) {
+    background-color: white;
+    border: solid;
+    color: black;
+    height: -moz-fit-content;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+:where(dialog:not([open])) {
+    display: none;
+}
+
+:where(details > summary:first-of-type) {
+    display: list-item;
+}
+
+:where([aria-busy="true" i]) {
+    cursor: progress;
+}
+
+:where([aria-disabled="true" i], [disabled]) {
+    cursor: not-allowed;
+}
+
+:where([aria-hidden="false" i][hidden]) {
+    display: initial;
+}
+
+:where([aria-hidden="false" i][hidden]:not(:focus)) {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
