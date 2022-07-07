@@ -27,7 +27,7 @@
   "devDependencies": {
     "unocss": "0.41.2",
     "vite": "2.9.13",
-    "vitest": "0.17.0"
+    "vitest": "0.17.1"
   },
   "peerDependencies": {
     "unocss": "^0.41.0"
