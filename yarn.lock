@@ -4714,7 +4714,7 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unocss-preset-ponya@^0.3.0:
+unocss-preset-ponya@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/unocss-preset-ponya/-/unocss-preset-ponya-0.3.0.tgz#2e70fba7ba0b9cd3cab797e70793ad5490fcf1b0"
   integrity sha512-PS/1fSm3VGEF9H4vKe99l+usgpsIoT180taGNTt4D0FRjOtP0XrvIPOJaqp4fy5fG/THR5eiGI4hDPPXe+cyOA==
