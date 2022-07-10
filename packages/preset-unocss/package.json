@@ -1,5 +1,5 @@
 {
-  "name": "unocss-preset-ponya",
+  "name": "@ponya-ui/preset-unocss",
   "version": "0.3.0",
   "repository": "git@github.com:dungsil/ponya.git",
   "author": "Kim Younggeon <mail@kyg.kr>",
@@ -24,12 +24,15 @@
     "build": "run-p -s build:*",
     "prepublish": "yarn build"
   },
+  "dependencies": {
+    "@unocss/preset-mini": "0.44.0"
+  },
   "devDependencies": {
     "unocss": "0.41.2",
     "vite": "2.9.14",
     "vitest": "0.18.0"
   },
   "peerDependencies": {
-    "unocss": "^0.41.0"
+    "unocss": "^0.44.0"
   }
 }

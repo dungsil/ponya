@@ -1,0 +1,26 @@
+// Vitest Snapshot v1
+
+exports[`Fonts > font family > font-sans 1`] = `
+"/* layer: default */
+.font-sans{font-family:Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, \\"Helvetica Neue\\", \\"Segoe UI\\", \\"Apple SD Gothic Neo\\", \\"Noto Sans KR\\", \\"Malgun Gothic\\", \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\", sans-serif;}"
+`;
+
+exports[`Fonts > font-size > text-base 1`] = `
+"/* layer: default */
+.text-base{font-size:1.125rem;line-height:0.05555rem;}"
+`;
+
+exports[`Fonts > font-size > text-sub 1`] = `
+"/* layer: default */
+.text-sub{font-size:0.875rem;line-height:1;}"
+`;
+
+exports[`Fonts > font-size > text-title 1`] = `
+"/* layer: default */
+.text-title{font-size:2.25rm;line-height:2.5rem;}"
+`;
+
+exports[`Fonts > font-size > text-ui 1`] = `
+"/* layer: default */
+.text-ui{font-size:1rem;line-height:0;}"
+`;
