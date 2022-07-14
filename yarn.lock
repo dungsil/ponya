@@ -503,6 +503,11 @@
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.44.0.tgz#880e50ca72a3b6df452fbeddee2ab378279d200f"
   integrity sha512-stuRYyY6GJW9kFzAv5MbAwxYDVMS5ycYTvgrRZrctyV3BHLERRQD1jyQfFNn1QHTxYceH4VpQDKjueHiUmqMHw==
 
+"@unocss/core@0.44.2":
+  version "0.44.2"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.44.2.tgz#1d4bdf44f3b9ea3e65dcd1221917f7dacc9f39da"
+  integrity sha512-u1P/IMU8axudO1Tao+Ow9fNyufcZvAnjAcCbRVFQH3grQGJwoqAgMyJDh4EZqpR/Xz8H8a43cNjIbBsa4BwBGQ==
+
 "@unocss/inspector@0.44.0":
   version "0.44.0"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.44.0.tgz#99d8f9b92c21985c9e027cf90500ec71d154bc29"
@@ -533,6 +538,13 @@
   integrity sha512-nv60tf6Ui1d1ktbYCAcYPpW+qmQI3OKct5lRebIH5zDjo3sv6mD8uQ25VvbaiXzRpQmZen+LFztHRLJ7guz0rA==
   dependencies:
     "@unocss/core" "0.44.0"
+
+"@unocss/preset-mini@0.44.2":
+  version "0.44.2"
+  resolved "https://registry.yarnpkg.com/@unocss/preset-mini/-/preset-mini-0.44.2.tgz#1b09c4fbf7031b299a6d90c78ee753e75caffa04"
+  integrity sha512-tbuArrrW5vP25EnRj8MHRJYIjZRsNukmgWtSpiHHmsE6/2eDo5T00NSO5eQQIwtrlxM8j2qFjnZUV/FEZ/SMhg==
+  dependencies:
+    "@unocss/core" "0.44.2"
 
 "@unocss/preset-tagify@0.44.0":
   version "0.44.0"
