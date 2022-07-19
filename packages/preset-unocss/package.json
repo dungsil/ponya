@@ -25,7 +25,7 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@unocss/preset-mini": "0.44.2"
+    "@unocss/preset-mini": "0.44.4"
   },
   "devDependencies": {
     "unocss": "0.44.4",
