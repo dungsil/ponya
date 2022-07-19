@@ -10,7 +10,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "strictNullChecks": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"]
 }
