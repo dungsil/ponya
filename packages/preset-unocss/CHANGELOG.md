@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/dungsil/ponya/compare/v0.3.1...v0.3.2) (2022-07-19)
+
+### Bug Fixes
+
+* **deps:** update dependency @unocss/preset-mini to v0.44.2 ([b971a6f](https://github.com/dungsil/ponya/commit/b971a6f6bfa308436e12ac691c6ac214c3971f0a))
+* **deps:** update dependency @unocss/preset-mini to v0.44.4 ([c698145](https://github.com/dungsil/ponya/commit/c6981450910deeaae30dc3c1c3a2a25eac1cdfab))
+
 # [0.3.0](https://github.com/dungsil/ponya/compare/v0.2.0...v0.3.0) (2022-06-29)
 
 ### Bug Fixes
