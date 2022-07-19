@@ -1,7 +1,6 @@
 import { describe, test } from 'vitest'
 import { matches } from './utiles'
 
-
 describe('Fonts', () => {
   describe('font family', () => {
     test('font-sans', async () => await matches(['font-sans']))

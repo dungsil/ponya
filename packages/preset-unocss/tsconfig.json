@@ -3,6 +3,8 @@
   "include": ["src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "outDir": "types",
-    "declaration": true
+    "noEmit": true,
+    "declaration": true,
+    "typeRoots": ["./types"]
   }
 }
