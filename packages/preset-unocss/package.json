@@ -28,7 +28,7 @@
     "@unocss/preset-mini": "0.44.2"
   },
   "devDependencies": {
-    "unocss": "0.44.0",
+    "unocss": "0.44.4",
     "vite": "2.9.14",
     "vitest": "0.18.1"
   },
