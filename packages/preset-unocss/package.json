@@ -29,7 +29,7 @@
     "@ponya-ui/normalize": "0.3.4"
   },
   "devDependencies": {
-    "unocss": "0.44.4",
+    "unocss": "0.44.5",
     "vite": "3.0.2",
     "vitest": "0.18.1"
   },

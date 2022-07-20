@@ -13,7 +13,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "3.0.1",
     "typescript": "4.7.4",
-    "unocss": "0.44.4",
+    "unocss": "0.44.5",
     "unocss-preset-ponya": "^0.3.0",
     "vite": "3.0.2",
     "vue": "3.2.37"
