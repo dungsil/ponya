@@ -25,7 +25,7 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@unocss/preset-mini": "0.44.4",
+    "@unocss/preset-mini": "0.44.5",
     "@ponya-ui/normalize": "0.3.4"
   },
   "devDependencies": {
